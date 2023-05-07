@@ -33,11 +33,13 @@ const Users = () => {
                     >
                         {user.name} 
                         {user.email}
+
+                        <Link to={`/updated/${user._id}`}><button>Update</button></Link>
                         <button 
                         style={{marginLeft: '1rem'}}
                         onClick={() => handleDelete(user._id)}
-                        
-                        ><small >X</small></button>
+                        ><small >X</small>
+                        </button>
                         </p>)
             }
         </div>
